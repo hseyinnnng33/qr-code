@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Lexend+Deca:wght@600&family=Manrope&family=Nosifer&family=Orienta&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,900&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Lexend+Deca:wght@600&family=Manrope&family=Nosifer&family=Orienta&family=Outfit&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+#genel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    transition: height 0.5s ease;
+}
+
+.container.active{
+    height: 440px;
+}
+
+.container h2{
+    font-size: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form input{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    padding: 5px;
+}
+
+.form button{
+    border: none;
+    height: 40px;
+    margin-top: 5px;
+    cursor: pointer;
+    color: #202020;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.qr-code{
+    opacity: 0;
+    pointer-events: none;
+    border: 1px solid #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img{
+    width: 200px;
+}
+
+.container.active .qr-code{
+    opacity: 1;
+    pointer-events: auto;
+    transition: height 0.5s ease;
+}
